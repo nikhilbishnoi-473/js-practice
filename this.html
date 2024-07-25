@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const some = {
+            name :"abc",
+            birthd : 2004,
+            daybirth: function(){
+                const currentYear = (new Date()).getFullYear();
+                return currentYear - this.birthd;
+            }
+
+        }
+        console.log(some.daybirth());
+
+const user = {
+    name: "abbba",
+    yearOfBirth: 2004,
+    currentYear: function() {
+        const currentYear = (new Date()).getFullYear();  
+        return currentYear - this.yearOfBirth;  
+    }
+}
+
+console.log(user.currentYear( ));
+const someo = {
+    years : 1200,
+yearc : function(){
+const currentYear = (new Date()).getFullYear();
+return currentYear - this.someo;
+}
+}
+console.log(someo.yearc())
+
+const use = {
+birthf: 2012,
+births: function(){
+    const currentYear = (new Date()).getFullYear();
+    return currentYear - this.birthf;
+}
+}
+console.log(use.births(  ))
+
+
+setTimeout(() => {
+    console.log("abcd")
+}, 4000);
+console.log("cba");
+setTimeout(() => {
+    console.log("absxdfgg")
+}, 5000);
+console.log("abcde")
+    </script>
+</body>
+</html>
